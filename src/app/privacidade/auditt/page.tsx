@@ -27,22 +27,18 @@ export default function AudittPrivacyPage() {
         <ProseH2 id="escopo">Escopo</ProseH2>
         <ProseP>
           O Auditt não tem cadastro público: o acesso acontece apenas por conta autorizada,
-          vinculada a um contrato entre a Mettrics e o cliente ou agência, autenticada pelo login
-          único (SSO) da Mettrics. Esta página cobre esse acesso autenticado e a navegação nas
-          páginas públicas do produto.
+          vinculada a um contrato entre a Mettrics e o cliente ou agência. Esta página cobre esse
+          acesso autenticado e a navegação nas páginas públicas do produto.
         </ProseP>
 
         <ProseH2 id="dados">Dados que tratamos</ProseH2>
         <ProseList>
-          <li>
-            Dados de conta recebidos do login único da Mettrics: nome, e-mail e empresa ou agência
-            vinculada.
-          </li>
+          <li>Dados de conta: nome, e-mail e empresa ou agência vinculada.</li>
           <li>
             Dados de campanhas de rádio inseridos pelo próprio cliente para fins de auditoria:
             planejamento, aprovação e veiculação realizada. Não são dados de consumidor final.
           </li>
-          <li>Métricas de uso agregadas da plataforma, coletadas pelo Plausible.</li>
+          <li>Métricas de uso agregadas da plataforma.</li>
         </ProseList>
 
         <ProseH2 id="base-legal">Por que tratamos esses dados</ProseH2>
@@ -61,18 +57,10 @@ export default function AudittPrivacyPage() {
         </ProseList>
 
         <ProseH2 id="cookies">Cookies</ProseH2>
-        <ProseP>
-          O Auditt usa apenas um cookie de sessão, estritamente necessário para manter o login
-          autenticado. Ele não serve a fins de publicidade ou rastreamento, e é removido ao encerrar
-          a sessão.
-        </ProseP>
+        <ProseP>O Auditt utiliza cookies para manter o usuário autenticado.</ProseP>
 
         <ProseH2 id="seguranca">Segurança</ProseH2>
-        <ProseP>
-          O acesso ao Auditt depende do login único (SSO) da Mettrics. Não há senha própria
-          armazenada pela plataforma, e o acesso aos dados de auditoria é restrito a contas
-          autorizadas.
-        </ProseP>
+        <ProseP>O acesso aos dados de auditoria é restrito a contas autorizadas.</ProseP>
       </Prose>
     </Container>
   )

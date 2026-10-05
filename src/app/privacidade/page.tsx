@@ -80,7 +80,7 @@ export default function PrivacyPage() {
         </ProseP>
         <ProseP>
           Não usamos cookies de publicidade nem de rastreamento de terceiros. Quando um produto usa
-          um cookie estritamente necessário, ele está descrito na página do produto.
+          cookies, eles estão descritos na página do produto.
         </ProseP>
 
         <ProseH2 id="compartilhamento">6. Compartilhamento de dados</ProseH2>

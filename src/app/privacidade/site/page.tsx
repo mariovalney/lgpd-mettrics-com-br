@@ -26,16 +26,15 @@ export default function SitePrivacyPage() {
 
         <ProseH2 id="escopo">Escopo</ProseH2>
         <ProseP>
-          Vale para o site institucional <a href={product.url}>mettrics.com.br</a>. O site não tem
-          cadastro nem área de usuário, por isso não tem Termos de Uso.
+          Vale para o site institucional <a href={product.url}>mettrics.com.br</a>.
         </ProseP>
 
         <ProseH2 id="dados">Dados que coletamos</ProseH2>
         <ProseList>
           <li>
             <strong>Dados de navegação agregados:</strong> páginas visitadas, tempo de sessão,
-            origem do acesso, tipo de dispositivo. Coletados pelo Plausible, sem cookies de
-            rastreamento e sem identificação individual.
+            origem do acesso, tipo de dispositivo. Coletados sem cookies de rastreamento e sem
+            identificação individual.
           </li>
           <li>
             <strong>Dados fornecidos voluntariamente:</strong> nome e e-mail quando você preenche o
