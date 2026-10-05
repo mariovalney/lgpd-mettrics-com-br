@@ -126,8 +126,9 @@ export default function PrivacyPage() {
         <ProseH2 id="alteracoes">10. Alterações nesta política</ProseH2>
         <ProseP>
           Esta política pode ser atualizada para refletir mudanças nos produtos ou na legislação.
-          Alterações relevantes serão comunicadas por e-mail aos clientes ativos. A data no início
-          de cada página indica a versão vigente.
+          Mudanças na finalidade, na forma ou na duração do tratamento, na identificação do
+          controlador ou no compartilhamento de dados serão informadas ao titular, com destaque para
+          o que mudou. A data no início de cada página indica a versão vigente.
         </ProseP>
 
         <ProductDocumentsSection kind="privacy" />

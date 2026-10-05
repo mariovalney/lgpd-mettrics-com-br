@@ -24,11 +24,6 @@ export default function AudittPrivacyPage() {
         />
         <StandardDocumentNotice kind="privacy" />
 
-        <ProseP>
-          O Auditt é a plataforma de auditoria de veiculação de rádio usada por squads de mídia e
-          agências parceiras.
-        </ProseP>
-
         <ProseH2 id="escopo">Escopo</ProseH2>
         <ProseP>
           O Auditt não tem cadastro público: o acesso acontece apenas por conta autorizada,
