@@ -45,7 +45,12 @@ RUN pnpm build && pnpm check:export
 FROM nginxinc/nginx-unprivileged:stable-alpine AS runner
 
 # This image already runs as a non-root user, which is why it listens on 8080 and not 80.
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/templates/default.conf.template
+
+# Runtime settings, read when the container starts: change them in the panel and restart, no
+# rebuild needed. NGINX_ACCESS_LOG=off leaves only the error log; NGINX_ENTRYPOINT_QUIET_LOGS=1
+# (a base image setting) also silences the startup messages.
+ENV NGINX_ACCESS_LOG="/var/log/nginx/access.log main"
 COPY --from=builder /app/out /usr/share/nginx/html
 
 EXPOSE 8080

@@ -25,6 +25,8 @@ Changing a variable in the Easypanel panel does nothing on its own — the image
 | Variable | Set at | Value | Notes |
 |---|---|---|---|
 | `NEXT_PUBLIC_SITE_URL` | Build (`--build-arg`) | `https://lgpd.mettrics.com.br` | Optional. `src/lib/site.ts` already carries the production domain; this overrides it for a staging build. |
+| `NGINX_ACCESS_LOG` | Runtime (panel) | `off` | Optional. `off` keeps only the error log; the default logs every request. A restart applies it. |
+| `NGINX_ENTRYPOINT_QUIET_LOGS` | Runtime (panel) | `1` | Optional, from the base image. Silences the entrypoint messages at startup. |
 
 ## Setting up the service
 
