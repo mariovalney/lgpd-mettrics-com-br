@@ -12,7 +12,7 @@ own language.
 ```
 src/app/            pages, sitemap.ts, robots.ts, not-found.tsx, favicons
 src/lib/site.ts     name, URL, navigation, THEME_COLOR, CONTROLLER (company, CNPJ, privacy channel)
-src/lib/documents.ts  published documents: title, summary, last update
+src/lib/documents.ts  standard documents, products and their pages, last update dates
 src/lib/routes.ts   build-time route discovery, feeds the sitemap
 src/components/ui/  container, button, section label, prose (legal copy)
 src/styles/         globals.css — Mettrics tokens, the only file with colour literals
@@ -30,6 +30,11 @@ design system: dark ground only, Lato and JetBrains Mono, a single accent used s
 
 - **Legal text is published, not written here.** Change a document only with the approved
   wording. Do not paraphrase, "improve" or summarise a clause in passing.
+- **Standard text first, product page second.** `/privacidade` and `/termos` hold what applies to
+  every product; `/privacidade/<product>` and `/termos/<product>` hold only what differs. A clause
+  shared by every product belongs in the standard text, not repeated per product.
+- **A new product** is an entry in `PRODUCTS` plus one page per document kind it has particulars
+  for.
 - **Bump `updated` in `src/lib/documents.ts`** whenever a document's content changes. The home
   card and the page header both read it.
 - **Company data lives in `CONTROLLER`** (`src/lib/site.ts`). Never repeat the CNPJ, the legal

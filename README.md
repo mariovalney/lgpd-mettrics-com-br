@@ -6,8 +6,13 @@ published at https://lgpd.mettrics.com.br.
 | Route | Content |
 |---|---|
 | `/` | Published documents and the data controller's identification |
-| `/politica-de-privacidade` | Privacy policy, May 2026 version (same text as mettrics.com.br/privacidade) |
+| `/privacidade` | Standard privacy policy, valid for every Mettrics product |
+| `/privacidade/<product>` | What is particular to one product (`site`, `auditt`) |
+| `/termos` | Standard terms of use for the Mettrics platforms |
+| `/termos/<product>` | What is particular to one platform (`auditt`). The site has no users, so no terms |
 | `/direitos-do-titular` | Data subject rights under LGPD art. 18 and how to exercise them |
+
+The methodology for updating these texts lives in Brain, under Produtos.
 
 Static site: Next.js 16 App Router exported to plain HTML, served by nginx. No database, no
 authentication, no runtime server.
@@ -26,7 +31,7 @@ pnpm preview          # serves out/ exactly as nginx will, on http://localhost:3
 ```
 src/app/            pages, sitemap.ts, robots.ts, not-found.tsx, favicons
 src/lib/site.ts     name, URL, navigation, company data (CONTROLLER)
-src/lib/documents.ts  published documents: title, summary, last update
+src/lib/documents.ts  standard documents, products and their pages, last update dates
 src/lib/routes.ts   build-time route discovery, feeds the sitemap
 src/components/ui/  container, button, section label, prose (legal copy)
 src/styles/         globals.css — Mettrics tokens, the only file with colour literals

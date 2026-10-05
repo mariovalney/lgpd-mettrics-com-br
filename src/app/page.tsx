@@ -2,9 +2,11 @@ import Link from 'next/link'
 import { ButtonLink } from '@/components/ui/button-link'
 import { Container } from '@/components/ui/container'
 import { SectionLabel } from '@/components/ui/section-label'
-import { DOCUMENTS } from '@/lib/documents'
+import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
 import { CONTROLLER } from '@/lib/site'
 import { cn } from '@/lib/utils'
+
+const DOCUMENTS = [STANDARD_DOCUMENTS.privacy, STANDARD_DOCUMENTS.terms, DATA_SUBJECT_RIGHTS]
 
 const CONTROLLER_FACTS: ReadonlyArray<{
   label: string
@@ -35,7 +37,9 @@ export default function HomePage() {
           13.709/2018), reunidos em um só endereço.
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
-          <ButtonLink href={DOCUMENTS.privacyPolicy.href}>Ler a Política de Privacidade</ButtonLink>
+          <ButtonLink href={STANDARD_DOCUMENTS.privacy.href}>
+            Ler a Política de Privacidade
+          </ButtonLink>
           <ButtonLink href={`mailto:${CONTROLLER.privacyEmail}`} variant="secondary">
             Escrever para {CONTROLLER.privacyEmail}
           </ButtonLink>
@@ -45,8 +49,8 @@ export default function HomePage() {
       <section className="border-t border-border bg-bg-surface py-16 md:py-20">
         <Container>
           <h2 className="text-[clamp(22px,3vw,30px)] tracking-[-0.5px]">Documentos</h2>
-          <ul className="mt-8 grid gap-4 md:grid-cols-2">
-            {Object.values(DOCUMENTS).map((doc) => (
+          <ul className="mt-8 grid gap-4 md:grid-cols-3">
+            {DOCUMENTS.map((doc) => (
               <li key={doc.href}>
                 <Link
                   href={doc.href}

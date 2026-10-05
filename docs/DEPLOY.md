@@ -45,7 +45,7 @@ curl -sS https://lgpd.mettrics.com.br/healthz                                   
 curl -sS -o /dev/null -w '%{http_code}\n' https://lgpd.mettrics.com.br/          # 200
 curl -sS -o /dev/null -w '%{http_code}\n' https://lgpd.mettrics.com.br/nao-existe # 404, never 200
 curl -sS https://lgpd.mettrics.com.br/sitemap.xml | head                        # absolute URLs on the real domain
-curl -sS -o /dev/null -D - https://lgpd.mettrics.com.br/politica-de-privacidade/ | grep -i location # redirect to /politica-de-privacidade
+curl -sS -o /dev/null -D - https://lgpd.mettrics.com.br/privacidade/ | grep -i location # redirect to /privacidade
 ```
 
 The third check matters more than it looks: a static host that answers 200 with the 404 page turns

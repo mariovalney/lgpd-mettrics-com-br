@@ -2,13 +2,12 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/ui/container'
 import { Prose, ProseH2, ProseHeader, ProseList, ProseP, ProseRule } from '@/components/ui/prose'
-import { DOCUMENTS } from '@/lib/documents'
+import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
 import { CONTROLLER } from '@/lib/site'
 
-const DOC = DOCUMENTS.dataSubjectRights
+const DOC = DATA_SUBJECT_RIGHTS
 const EMAIL = CONTROLLER.privacyEmail
 const LGPD_URL = 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm'
-const ANPD_URL = 'https://www.gov.br/anpd/pt-br'
 
 export const metadata: Metadata = {
   title: DOC.title,
@@ -79,20 +78,11 @@ export default function DataSubjectRightsPage() {
           A confirmação de tratamento e o acesso aos dados podem ser fornecidos em formato
           simplificado ou por declaração completa, com a origem dos dados, a existência de registro,
           os critérios usados e a finalidade do tratamento (art. 19). Os prazos estão na{' '}
-          <Link href={DOCUMENTS.privacyPolicy.href}>Política de Privacidade</Link>.
+          <Link href={STANDARD_DOCUMENTS.privacy.href}>Política de Privacidade</Link>.
         </ProseP>
         <ProseP>
           Quando não for possível atender, explicamos o motivo: por exemplo, quando a Mettrics não é
           a controladora daqueles dados, indicamos quem é, sempre que soubermos (art. 18, § 4º).
-        </ProseP>
-
-        <ProseH2 id="anpd">Se a resposta não resolver</ProseH2>
-        <ProseP>
-          Você pode peticionar contra a Mettrics na{' '}
-          <a href={ANPD_URL} rel="noopener">
-            Autoridade Nacional de Proteção de Dados (ANPD)
-          </a>
-          , conforme o art. 18, § 1º.
         </ProseP>
 
         <ProseRule />
