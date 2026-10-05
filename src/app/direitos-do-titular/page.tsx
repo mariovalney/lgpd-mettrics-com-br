@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/ui/container'
-import { Prose, ProseH2, ProseHeader, ProseList, ProseP, ProseRule } from '@/components/ui/prose'
+import { Prose, ProseH2, ProseHeader, ProseList, ProseP } from '@/components/ui/prose'
 import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
 import { CONTROLLER } from '@/lib/site'
 
@@ -84,11 +84,6 @@ export default function DataSubjectRightsPage() {
           Quando não for possível atender, explicamos o motivo: por exemplo, quando a Mettrics não é
           a controladora daqueles dados, indicamos quem é, sempre que soubermos (art. 18, § 4º).
         </ProseP>
-
-        <ProseRule />
-        <p className="text-[13px] text-fg-muted">
-          Canal de privacidade: <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
-        </p>
       </Prose>
     </Container>
   )

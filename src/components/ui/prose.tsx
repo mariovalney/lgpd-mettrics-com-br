@@ -68,7 +68,3 @@ export function ProseList({
     <ul className={className}>{children}</ul>
   )
 }
-
-export function ProseRule() {
-  return <hr className="my-12 border-0 border-t border-border" />
-}

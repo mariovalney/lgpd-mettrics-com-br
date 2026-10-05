@@ -2,11 +2,21 @@ import Link from 'next/link'
 import { ButtonLink } from '@/components/ui/button-link'
 import { Container } from '@/components/ui/container'
 import { SectionLabel } from '@/components/ui/section-label'
-import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
+import {
+  DATA_SUBJECT_RIGHTS,
+  type DocumentKind,
+  PRODUCTS,
+  STANDARD_DOCUMENTS,
+} from '@/lib/documents'
 import { CONTROLLER } from '@/lib/site'
 import { cn } from '@/lib/utils'
 
 const DOCUMENTS = [STANDARD_DOCUMENTS.privacy, STANDARD_DOCUMENTS.terms, DATA_SUBJECT_RIGHTS]
+
+const DOCUMENT_LABELS: Record<DocumentKind, string> = {
+  privacy: 'Privacidade',
+  terms: 'Termos de Uso',
+}
 
 const CONTROLLER_FACTS: ReadonlyArray<{
   label: string
@@ -33,8 +43,7 @@ export default function HomePage() {
           Como a Mettrics trata dados pessoais.
         </h1>
         <p className="mt-5 max-w-xl text-fg-secondary">
-          Documentos e canais da Mettrics sobre a Lei Geral de Proteção de Dados (Lei n.º
-          13.709/2018), reunidos em um só endereço.
+          Documentos da Mettrics sobre a Lei Geral de Proteção de Dados (Lei n.º 13.709/2018).
         </p>
         <div className="mt-9 flex flex-wrap gap-3">
           <ButtonLink href={STANDARD_DOCUMENTS.privacy.href}>
@@ -69,6 +78,32 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-border py-16 md:py-20">
+        <Container>
+          <h2 className="text-[clamp(22px,3vw,30px)] tracking-[-0.5px]">Produtos</h2>
+          <ul className="mt-8 grid gap-4 md:grid-cols-2">
+            {PRODUCTS.map((product) => (
+              <li
+                key={product.slug}
+                className="rounded-xl border border-border-subtle bg-bg-elevated p-6"
+              >
+                <h3 className="text-[17px]">{product.name}</h3>
+                <p className="mt-1 font-mono text-xs text-fg-muted">{new URL(product.url).host}</p>
+                <ul className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+                  {Object.entries(product.documents).map(([kind, doc]) => (
+                    <li key={kind}>
+                      <Link href={doc.href} className="font-bold text-fg-primary hover:text-accent">
+                        {DOCUMENT_LABELS[kind as DocumentKind]}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
+      <section className="border-t border-border bg-bg-surface py-16 md:py-20">
         <Container>
           <h2 className="text-[clamp(22px,3vw,30px)] tracking-[-0.5px]">
             Quem responde pelos dados

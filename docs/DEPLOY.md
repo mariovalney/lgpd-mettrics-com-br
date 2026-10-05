@@ -18,9 +18,10 @@ than reaching production unnoticed.
 
 ## The trap: build-time versus runtime
 
-There are no runtime variables. The site is static, so **everything is decided at build time**,
-including the URL that ends up in `sitemap.xml`, in `robots.txt` and in every canonical tag.
-Changing a variable in the Easypanel panel does nothing on its own — the image has to be rebuilt.
+The site is static, so **its content is decided at build time**, including the URL that ends up
+in `sitemap.xml`, in `robots.txt` and in every canonical tag. Changing `NEXT_PUBLIC_SITE_URL` in
+the Easypanel panel does nothing on its own: the image has to be rebuilt. The `NGINX_*` variables
+are the exception, read by nginx when the container starts.
 
 | Variable | Set at | Value | Notes |
 |---|---|---|---|

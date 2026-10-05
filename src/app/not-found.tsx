@@ -14,9 +14,6 @@ export default function NotFound() {
       </p>
       <SectionLabel>Página não encontrada</SectionLabel>
       <h1 className="text-[clamp(20px,3vw,28px)] tracking-[-0.5px]">Este endereço não existe.</h1>
-      <p className="mx-auto mt-3 max-w-md text-fg-secondary">
-        A URL acessada não corresponde a nenhuma página da central de privacidade.
-      </p>
       <div className="mt-10 flex justify-center">
         <ButtonLink href="/">Voltar ao início</ButtonLink>
       </div>

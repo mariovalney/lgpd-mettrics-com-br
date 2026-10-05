@@ -24,8 +24,7 @@ export function StandardDocumentNotice({ kind }: { kind: DocumentKind }) {
   const standard = STANDARD_DOCUMENTS[kind]
   return (
     <p className="mb-10 rounded-xl border border-border-subtle bg-bg-elevated px-5 py-4 text-sm">
-      Esta página complementa a <Link href={standard.href}>{standard.title}</Link> da Mettrics. O
-      que não estiver descrito aqui segue o texto padrão.
+      Esta página complementa a <Link href={standard.href}>{standard.title}</Link> da Mettrics.
     </p>
   )
 }
