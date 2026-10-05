@@ -59,6 +59,15 @@ export const PRODUCTS: ReadonlyArray<Product> = [
       terms: { href: '/termos/auditt', updated: 'outubro de 2026' },
     },
   },
+  {
+    slug: 'minha-conta',
+    name: 'Minha Conta',
+    url: 'https://account.mettrics.com.br',
+    documents: {
+      privacy: { href: '/privacidade/minha-conta', updated: 'outubro de 2026' },
+      terms: { href: '/termos/minha-conta', updated: 'outubro de 2026' },
+    },
+  },
 ]
 
 export function productsWith(kind: DocumentKind) {
