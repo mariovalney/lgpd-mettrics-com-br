@@ -34,9 +34,7 @@ export default function TermsPage() {
           concedido pela Mettrics a clientes e agências com contrato comercial vigente.
         </ProseP>
         <ProseList>
-          <li>
-            O acesso acontece por login único (SSO) da Mettrics, com conta pessoal e intransferível.
-          </li>
+          <li>O acesso acontece por conta pessoal e intransferível.</li>
           <li>
             A disponibilidade da conta está vinculada ao contrato comercial entre a Mettrics e o
             cliente ou agência; o acesso é suspenso ao término desse contrato.
