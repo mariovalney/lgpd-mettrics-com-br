@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ProseH2, ProseList, ProseP } from '@/components/ui/prose'
+import { ProseH2, ProseList } from '@/components/ui/prose'
 import { type DocumentKind, productsWith, STANDARD_DOCUMENTS } from '@/lib/documents'
 
 /** Closing section of a standard document: where each product's particulars live. */
@@ -7,8 +7,7 @@ export function ProductDocumentsSection({ kind }: { kind: DocumentKind }) {
   const products = productsWith(kind)
   return (
     <>
-      <ProseH2 id="produtos">Particularidades por produto</ProseH2>
-      <ProseP>O que vale só para um produto está na página dele e complementa este texto.</ProseP>
+      <ProseH2 id="produtos">Detalhes por produto</ProseH2>
       <ProseList>
         {products.map((product) => (
           <li key={product.slug}>
