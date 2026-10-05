@@ -28,8 +28,9 @@ design system: dark ground only, Lato and JetBrains Mono, a single accent used s
 
 ## Legal content
 
-- **Legal text is published, not written here.** Change a document only with the approved
-  wording. Do not paraphrase, "improve" or summarise a clause in passing.
+- **Legal text is published, not written here.** The approved wording and the update
+  methodology live in Brain, collection [LGPD](https://brain.mettrics.cloud/collection/lgpd-Ri49Z1W1en).
+  Change a document only with the approved wording. Do not paraphrase, "improve" or summarise a clause in passing.
 - **Standard text first, product page second.** `/privacidade` and `/termos` hold what applies to
   every product; `/privacidade/<product>` and `/termos/<product>` hold only what differs. A clause
   shared by every product belongs in the standard text, not repeated per product.

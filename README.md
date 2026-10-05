@@ -12,7 +12,9 @@ published at https://lgpd.mettrics.com.br.
 | `/termos/<product>` | What is particular to one platform (`auditt`). The site has no users, so no terms |
 | `/direitos-do-titular` | Data subject rights under LGPD art. 18 and how to exercise them |
 
-The methodology for updating these texts lives in Brain, under Produtos.
+The approved texts and the update methodology live in Brain, collection
+[LGPD](https://brain.mettrics.cloud/collection/lgpd-Ri49Z1W1en). Products link to `/privacidade`
+and `/termos`, never to their own page.
 
 Static site: Next.js 16 App Router exported to plain HTML, served by nginx. No database, no
 authentication, no runtime server.
