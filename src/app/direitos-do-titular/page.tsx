@@ -1,20 +1,20 @@
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Container } from '@/components/ui/container'
 import { Prose, ProseH2, ProseHeader, ProseList, ProseP } from '@/components/ui/prose'
 import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
+import { pageMetadata } from '@/lib/metadata'
 import { CONTROLLER } from '@/lib/site'
 
 const DOC = DATA_SUBJECT_RIGHTS
 const EMAIL = CONTROLLER.privacyEmail
 const LGPD_URL = 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm'
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: DOC.title,
   description:
     'Os direitos do titular de dados pessoais pela LGPD e como exercê-los junto à Mettrics.',
-  alternates: { canonical: DOC.href },
-}
+  path: DOC.href,
+})
 
 /** Art. 18, items I to IX, in the order of the law so the roman numeral matches the inciso. */
 const RIGHTS = [

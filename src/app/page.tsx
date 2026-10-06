@@ -8,8 +8,11 @@ import {
   PRODUCTS,
   STANDARD_DOCUMENTS,
 } from '@/lib/documents'
-import { CONTROLLER } from '@/lib/site'
+import { pageMetadata } from '@/lib/metadata'
+import { CONTROLLER, SITE } from '@/lib/site'
 import { cn } from '@/lib/utils'
+
+export const metadata = pageMetadata({ description: SITE.description, path: '/' })
 
 const DOCUMENTS = [STANDARD_DOCUMENTS.privacy, STANDARD_DOCUMENTS.terms, DATA_SUBJECT_RIGHTS]
 

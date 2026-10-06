@@ -27,14 +27,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: { default: SITE.name, template: `%s · ${SITE.name}` },
   description: SITE.description,
-  openGraph: {
-    type: 'website',
-    siteName: SITE.name,
-    title: SITE.name,
-    description: SITE.description,
-    url: SITE.url,
-    locale: SITE.locale,
-  },
 }
 
 export const viewport: Viewport = {

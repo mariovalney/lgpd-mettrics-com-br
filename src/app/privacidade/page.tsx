@@ -1,19 +1,19 @@
-import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ProductDocumentsSection } from '@/components/document-links'
 import { Container } from '@/components/ui/container'
 import { Prose, ProseH2, ProseHeader, ProseList, ProseP } from '@/components/ui/prose'
 import { DATA_SUBJECT_RIGHTS, STANDARD_DOCUMENTS } from '@/lib/documents'
+import { pageMetadata } from '@/lib/metadata'
 import { CONTROLLER } from '@/lib/site'
 
 const DOC = STANDARD_DOCUMENTS.privacy
 const EMAIL = CONTROLLER.privacyEmail
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: DOC.title,
   description: DOC.summary,
-  alternates: { canonical: DOC.href },
-}
+  path: DOC.href,
+})
 
 export default function PrivacyPage() {
   return (

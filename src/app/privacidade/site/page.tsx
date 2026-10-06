@@ -1,17 +1,17 @@
-import type { Metadata } from 'next'
 import { StandardDocumentNotice } from '@/components/document-links'
 import { Container } from '@/components/ui/container'
 import { Prose, ProseH2, ProseHeader, ProseList, ProseP } from '@/components/ui/prose'
 import { productDocument, STANDARD_DOCUMENTS } from '@/lib/documents'
+import { pageMetadata } from '@/lib/metadata'
 
 const { product, doc } = productDocument('site', 'privacy')
 const TITLE = `${STANDARD_DOCUMENTS.privacy.title} · ${product.name}`
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: TITLE,
   description: `O que é particular do ${product.name.toLowerCase()} da Mettrics na Política de Privacidade.`,
-  alternates: { canonical: doc.href },
-}
+  path: doc.href,
+})
 
 export default function SitePrivacyPage() {
   return (
