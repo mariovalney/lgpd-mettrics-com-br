@@ -40,11 +40,12 @@ export const ANALYTICS_SCRIPT_URL = 'https://analytics.mettrics.cloud/js/script.
  */
 export const THEME_COLOR = '#1a1915'
 
+/** Where people manage their own Mettrics account and data. */
+export const ACCOUNT_URL = 'https://account.mettrics.com.br'
+
 /** Header navigation. Adding a page here does not affect the sitemap — that one discovers routes. */
 export const NAV: ReadonlyArray<{ href: string; label: string }> = [
-  { href: '/privacidade', label: 'Privacidade' },
-  { href: '/termos', label: 'Termos' },
-  { href: '/direitos-do-titular', label: 'Direitos do titular' },
+  { href: ACCOUNT_URL, label: 'Seus dados' },
 ]
 
 /**

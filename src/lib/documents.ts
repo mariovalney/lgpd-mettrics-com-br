@@ -4,6 +4,8 @@
  * title and `updated` from here, so the home cards and the page headers cannot disagree.
  */
 
+import { ACCOUNT_URL } from './site'
+
 export type DocumentKind = 'privacy' | 'terms'
 
 export const STANDARD_DOCUMENTS = {
@@ -62,7 +64,7 @@ export const PRODUCTS: ReadonlyArray<Product> = [
   {
     slug: 'minha-conta',
     name: 'Minha Conta',
-    url: 'https://account.mettrics.com.br',
+    url: ACCOUNT_URL,
     documents: {
       privacy: { href: '/privacidade/minha-conta', updated: 'outubro de 2026' },
       terms: { href: '/termos/minha-conta', updated: 'outubro de 2026' },

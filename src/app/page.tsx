@@ -40,7 +40,7 @@ export default function HomePage() {
       <Container className="py-20 md:py-28">
         <SectionLabel>Privacidade · LGPD</SectionLabel>
         <h1 className="max-w-3xl text-[clamp(32px,5vw,56px)] leading-[1.08] tracking-[-1px]">
-          Como a Mettrics trata dados pessoais.
+          Como a Mettrics trata <span className="text-accent">dados pessoais</span>.
         </h1>
         <p className="mt-5 max-w-xl text-fg-secondary">
           Documentos da Mettrics sobre a Lei Geral de Proteção de Dados (Lei n.º 13.709/2018).
@@ -50,7 +50,7 @@ export default function HomePage() {
             Ler a Política de Privacidade
           </ButtonLink>
           <ButtonLink href={`mailto:${CONTROLLER.privacyEmail}`} variant="secondary">
-            Escrever para {CONTROLLER.privacyEmail}
+            Entrar em contato
           </ButtonLink>
         </div>
       </Container>

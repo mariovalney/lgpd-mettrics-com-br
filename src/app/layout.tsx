@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   <li key={item.href}>
                     <Link
                       href={item.href}
-                      className="text-fg-muted transition-colors duration-200 hover:text-fg-primary"
+                      className="text-accent transition-colors duration-200 hover:text-accent-hover"
                     >
                       {item.label}
                     </Link>
