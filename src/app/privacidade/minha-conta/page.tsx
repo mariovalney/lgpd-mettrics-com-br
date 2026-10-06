@@ -26,10 +26,10 @@ export default function AccountPrivacyPage() {
 
         <ProseH2 id="escopo">Escopo</ProseH2>
         <ProseP>
-          A Minha Conta não tem cadastro público: o acesso acontece apenas por conta autorizada,
-          vinculada a um contrato entre a Mettrics e o cliente ou agência. Nela, cada pessoa
-          gerencia o próprio acesso às plataformas da Mettrics: dados do perfil, senha e sessões
-          autenticadas.
+          A Minha Conta é o gerenciamento da conta Mettrics: nela, cada pessoa cuida dos dados do
+          perfil, da senha e das sessões autenticadas. Não tem cadastro público: o acesso acontece
+          apenas por conta autorizada, vinculada a um contrato entre a Mettrics e o cliente ou
+          agência.
         </ProseP>
 
         <ProseH2 id="dados">Dados que tratamos</ProseH2>
@@ -63,7 +63,7 @@ export default function AccountPrivacyPage() {
         <ProseP>A Minha Conta utiliza cookies para manter o usuário autenticado.</ProseP>
 
         <ProseH2 id="seguranca">Segurança</ProseH2>
-        <ProseP>Cada pessoa vê e altera apenas os dados da própria conta.</ProseP>
+        <ProseP>Cada pessoa gerencia apenas a própria conta Mettrics.</ProseP>
       </Prose>
     </Container>
   )

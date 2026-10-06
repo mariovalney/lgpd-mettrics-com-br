@@ -74,11 +74,11 @@ export default function PrivacyPage() {
 
         <ProseH2 id="cookies">5. Cookies e métricas de uso</ProseH2>
         <ProseP>
-          Todos os produtos da Mettrics utilizam métricas de uso para melhorar o produto: páginas
-          visitadas, tempo de sessão, origem do acesso e tipo de dispositivo. A coleta não usa
-          cookies, não faz fingerprinting nem rastreamento entre sites, e produz apenas métricas
-          agregadas e anônimas, sem identificar a pessoa usuária. Esse tratamento se baseia no
-          legítimo interesse.
+          Todos os produtos da Mettrics utilizam métricas de uso: páginas visitadas, tempo de
+          sessão, origem do acesso e tipo de dispositivo. A coleta não usa cookies, não faz
+          fingerprinting nem rastreamento entre sites, e produz apenas métricas agregadas e
+          anônimas, sem identificar a pessoa usuária. Esse tratamento se baseia no legítimo
+          interesse da Mettrics na melhoria contínua dos seus produtos (art. 7º, IX).
         </ProseP>
         <ProseP>
           Não usamos cookies de publicidade nem de rastreamento de terceiros. Quando um produto usa
@@ -114,8 +114,9 @@ export default function PrivacyPage() {
         </ProseList>
         <ProseP>
           Para exercer seus direitos, entre em contato pelo e-mail{' '}
-          <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Responderemos em até 15 dias úteis. O passo a
-          passo está em <Link href={DATA_SUBJECT_RIGHTS.href}>{DATA_SUBJECT_RIGHTS.title}</Link>.
+          <a href={`mailto:${EMAIL}`}>{EMAIL}</a>. Responderemos em até 15 dias, contados da data do
+          pedido (art. 19, II). O passo a passo está em{' '}
+          <Link href={DATA_SUBJECT_RIGHTS.href}>{DATA_SUBJECT_RIGHTS.title}</Link>.
         </ProseP>
 
         <ProseH2 id="seguranca">9. Segurança</ProseH2>

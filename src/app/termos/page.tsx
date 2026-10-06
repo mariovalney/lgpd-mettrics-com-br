@@ -34,7 +34,15 @@ export default function TermsPage() {
           concedido pela Mettrics a clientes e agências com contrato comercial vigente.
         </ProseP>
         <ProseList>
-          <li>O acesso acontece por conta pessoal e intransferível.</li>
+          <li>
+            O acesso acontece por conta pessoal e intransferível. Senha e perfil Mettrics são
+            pessoais e não devem ser compartilhados em nenhuma hipótese.
+          </li>
+          <li>
+            Os produtos da Mettrics suportam múltiplos usuários e acesso por organização. Contas de
+            sistema, de aplicação ou de uso compartilhado devem ser solicitadas ao suporte da
+            Mettrics, para análise e orientação.
+          </li>
           <li>
             A disponibilidade da conta está vinculada ao contrato comercial entre a Mettrics e o
             cliente ou agência; o acesso é suspenso ao término desse contrato.

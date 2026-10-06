@@ -26,8 +26,8 @@ export default function AccountTermsPage() {
 
         <ProseH2 id="objeto">Objeto</ProseH2>
         <ProseP>
-          A Minha Conta permite gerenciar o acesso às plataformas da Mettrics: atualizar os dados do
-          perfil, trocar a senha, ver as sessões autenticadas e encerrá-las.
+          A Minha Conta é o gerenciamento da conta Mettrics: atualizar os dados do perfil, trocar a
+          senha, ver as sessões autenticadas e encerrá-las.
         </ProseP>
 
         <ProseH2 id="responsabilidades">Responsabilidades</ProseH2>
