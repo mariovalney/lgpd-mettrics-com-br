@@ -74,9 +74,11 @@ export default function PrivacyPage() {
 
         <ProseH2 id="cookies">5. Cookies e métricas de uso</ProseH2>
         <ProseP>
-          Para entender o uso dos produtos, a Mettrics usa o <strong>Plausible Analytics</strong>:
-          ele não usa cookies, não faz fingerprinting nem rastreamento entre sites, e produz apenas
-          métricas agregadas e anônimas, sem identificar a pessoa usuária.
+          Todos os produtos da Mettrics utilizam métricas de uso para melhorar o produto: páginas
+          visitadas, tempo de sessão, origem do acesso e tipo de dispositivo. A coleta não usa
+          cookies, não faz fingerprinting nem rastreamento entre sites, e produz apenas métricas
+          agregadas e anônimas, sem identificar a pessoa usuária. Esse tratamento se baseia no
+          legítimo interesse.
         </ProseP>
         <ProseP>
           Não usamos cookies de publicidade nem de rastreamento de terceiros. Quando um produto usa

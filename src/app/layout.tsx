@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import type { ReactNode } from 'react'
 import { Container } from '@/components/ui/container'
-import { CONTROLLER, NAV, SITE, THEME_COLOR } from '@/lib/site'
+import { ANALYTICS_SCRIPT_URL, CONTROLLER, NAV, SITE, THEME_COLOR } from '@/lib/site'
 import '@/styles/globals.css'
 
 const lato = Lato({
@@ -45,6 +45,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang={SITE.locale} className={`${lato.variable} ${jetbrainsMono.variable}`}>
+      <head>
+        <script defer data-domain={new URL(SITE.url).host} src={ANALYTICS_SCRIPT_URL} />
+      </head>
       <body className="flex min-h-dvh flex-col">
         <header className="sticky top-0 z-10 border-b border-border bg-bg-base/90 backdrop-blur-md">
           <Container className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 py-4 md:py-5">

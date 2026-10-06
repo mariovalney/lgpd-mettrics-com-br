@@ -32,11 +32,6 @@ export default function SitePrivacyPage() {
         <ProseH2 id="dados">Dados que coletamos</ProseH2>
         <ProseList>
           <li>
-            <strong>Dados de navegação agregados:</strong> páginas visitadas, tempo de sessão,
-            origem do acesso, tipo de dispositivo. Coletados sem cookies de rastreamento e sem
-            identificação individual.
-          </li>
-          <li>
             <strong>Dados fornecidos voluntariamente:</strong> nome e e-mail quando você preenche o
             formulário de contato ou solicita demonstração.
           </li>
@@ -44,17 +39,16 @@ export default function SitePrivacyPage() {
 
         <ProseH2 id="uso">Como usamos os dados</ProseH2>
         <ProseList>
-          <li>Analisar o desempenho do site e melhorar a experiência de navegação.</li>
           <li>Responder a solicitações de contato e demonstração.</li>
         </ProseList>
 
         <ProseH2 id="base-legal">Base legal</ProseH2>
         <ProseList>
           <li>
-            <strong>Consentimento:</strong> para envio de comunicações e uso de analytics.
+            <strong>Consentimento:</strong> para envio de comunicações.
           </li>
           <li>
-            <strong>Legítimo interesse:</strong> para análise agregada de uso do site e segurança.
+            <strong>Legítimo interesse:</strong> para segurança do site.
           </li>
         </ProseList>
       </Prose>

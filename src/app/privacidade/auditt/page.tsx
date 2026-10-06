@@ -38,7 +38,6 @@ export default function AudittPrivacyPage() {
             Dados de campanhas de rádio inseridos pelo próprio cliente para fins de auditoria:
             planejamento, aprovação e veiculação realizada. Não são dados de consumidor final.
           </li>
-          <li>Métricas de uso agregadas da plataforma.</li>
         </ProseList>
 
         <ProseH2 id="base-legal">Por que tratamos esses dados</ProseH2>
@@ -51,8 +50,8 @@ export default function AudittPrivacyPage() {
             <strong>Cumprimento de obrigação legal</strong> ou regulatória.
           </li>
           <li>
-            <strong>Legítimo interesse:</strong> manter a segurança da plataforma, prevenir fraude
-            na auditoria e entender o uso do produto para melhorá-lo.
+            <strong>Legítimo interesse:</strong> manter a segurança da plataforma e prevenir fraude
+            na auditoria.
           </li>
         </ProseList>
 

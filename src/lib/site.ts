@@ -31,6 +31,9 @@ export const SITE = {
   url: resolveSiteUrl(),
 } as const
 
+/** Self-hosted Plausible. Cookieless, so it needs no consent banner. */
+export const ANALYTICS_SCRIPT_URL = 'https://analytics.mettrics.cloud/js/script.js'
+
 /**
  * The one literal colour outside src/styles/globals.css. The browser reads it from a meta tag
  * before any stylesheet exists, so it cannot be a CSS token. Keep it in sync with --color-bg-base.

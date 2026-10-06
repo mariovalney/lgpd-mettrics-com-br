@@ -41,7 +41,6 @@ export default function AccountPrivacyPage() {
             terceiros.
           </li>
           <li>Registros de acesso e das sessões autenticadas.</li>
-          <li>Métricas de uso agregadas da plataforma.</li>
         </ProseList>
 
         <ProseH2 id="base-legal">Por que tratamos esses dados</ProseH2>
@@ -55,8 +54,8 @@ export default function AccountPrivacyPage() {
             12.965/2014, art. 15).
           </li>
           <li>
-            <strong>Legítimo interesse:</strong> manter a segurança das contas, prevenir acesso
-            indevido e entender o uso do produto para melhorá-lo.
+            <strong>Legítimo interesse:</strong> manter a segurança das contas e prevenir acesso
+            indevido.
           </li>
         </ProseList>
 
